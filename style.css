@@ -39,6 +39,12 @@ body {
   border-radius: 1.5rem;
 }
 
+#rating img {
+  padding: 1em;
+  background-color: var(--dark-blue);
+  border-radius: 10rem;
+}
+
 .inputs {
   display: flex;
   justify-content: space-between;
