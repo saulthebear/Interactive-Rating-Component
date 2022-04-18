@@ -1,0 +1,74 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  color: var(--light-grey);
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card {
+  background: linear-gradient(
+    45deg,
+    var(--very-dark-blue) 0%,
+    var(--dark-blue) 100%
+  );
+  max-width: 30rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.inputs > input {
+  display: none;
+}
+
+.inputs > label {
+  line-height: 1;
+  height: 3em;
+  aspect-ratio: 1/1;
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+}
+
+h1 {
+  color: white;
+}
+
+button {
+  border: none;
+  width: 100%;
+  background-color: var(--orange);
+  color: white;
+  padding: 1em;
+  border-radius: 10rem;
+  text-transform: uppercase;
+}
