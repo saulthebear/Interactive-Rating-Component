@@ -42,16 +42,20 @@
         <input type="radio" name="rating" id="rating_five" value="5" />
         <label for="rating_five">5</label>
       </div>
-      <button>Submit</button>
+      <button id="submit-rating" type="button">Submit</button>
     </form>
 
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="card" id="thank-you">
-      You selected <span>5</span> out of 5 Thank you! We appreciate you taking
-      the time to give a rating. If you ever need more support, don’t hesitate
-      to get in touch!
+    <div class="card hidden" id="thank-you">
+      <img src="/images/illustration-thank-you.svg" />
+      <div class="selected-rating">You selected <span></span> out of 5</div>
+      <h1>Thank you!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
     </div>
 
     <!-- Thank you state end -->
@@ -60,7 +64,8 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Stefan Vosloo</a>.
+      >. Coded by
+      <a href="https://www.github.com/saulthebear">Stefan Vosloo</a>.
     </div>
   </body>
 </html>

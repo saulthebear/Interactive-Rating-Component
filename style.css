@@ -45,7 +45,16 @@ body {
 }
 
 .inputs > input {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.inputs > input:checked + label {
+  background-color: var(--orange);
+  color: white;
 }
 
 .inputs > label {
@@ -57,6 +66,13 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10rem;
+  cursor: pointer;
+}
+
+label:hover,
+label:active {
+  background-color: var(--medium-grey);
+  color: white;
 }
 
 h1 {
@@ -71,4 +87,44 @@ button {
   padding: 1em;
   border-radius: 10rem;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+#thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#thank-you img {
+  margin-bottom: 2em;
+}
+
+#thank-you h1 {
+  margin-bottom: 0.5em;
+}
+
+#thank-you p {
+  margin: 0;
+}
+
+.selected-rating {
+  background-color: var(--dark-blue);
+  padding: 0.5em 1em;
+  border-radius: 10rem;
+  color: var(--orange);
+  margin-bottom: 0.75em;
+}
+
+.attribution {
+  margin-top: 5em;
+}
+
+.attribution a {
+  color: white;
+}
+
+.hidden {
+  display: none !important;
 }
