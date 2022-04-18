@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/rating-component-using-pure-html-css-and-js-ry6VWIsVq)
-- Live Site URL: [Github Pages](https://saulthebear.github.io/Interactive-Rating-Component/)
+- Live Site URL: [Github Pages](https://saulthebear.github.io/Interactive-Rating-Component/index.html)
 
 ### Screenshot
 
